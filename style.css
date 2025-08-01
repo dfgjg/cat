@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=LXGW+Marker+Gothic&family=Pacifico&family=Press+Start+2P&display=swap');
+
+
+*{
+    cursor: url('img/icon/fish-bone-16.png'), auto;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+body{
+    background-color: rgb(253, 246, 187);
+    font-family: "Pacifico", cursive;
+}
+a:hover{
+    cursor: url('img/icon/tiger-16x16.png'), auto;
+}
+h1{
+    color: rgb(0, 0, 0);
+    margin-left: 1em;
+    font-size: 3em;
+}
+.cat{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.swiper-slide{
+    color: white;
+}
+.bucket{
+    display: flex;
+}
+header{
+    background-color: #FFFA65;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+.logo img{
+    width:3em;
+    margin-right: 5px;
+}
+.logo{
+    display: flex;
+    font-size: 1.5em;
+    font-weight: 600;
+    align-items: center;
+}
+.goods{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 1.5rem;
+}
+.goods img{
+    width: 3em;
+}
+nav{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+nav a{
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
+.hero-about img{
+    margin-left: 3.2em;
+}
+.hero-about h1{
+    margin-top: 1.4em;
+}
+.hero-about{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-weight: 500;
+}
+.swiper{
+    display: flex;
+    justify-content: center;
+    width: 600px;
+    height: 600px;
+    margin-bottom: 30px;
+    
+}
+.about{
+    margin-left: 1em;
+}
+.swiper-pagination{
+    margin-top: 30px;
+}
+.cats-products{
+    color: white;
+}
+.nav img{
+    width: 5vw;
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.add-to-bucket:hover{
+    cursor: url('img/icon/tiger-16x16.png'), auto;
+}
+.add-to-bucket2:hover{
+    cursor: url('img/icon/tiger-16x16.png'), auto;
+}
+.add-to-bucket3:hover{
+    cursor: url('img/icon/tiger-16x16.png'), auto;
+}
+.add-to-bucket4:hover{
+    cursor: url('img/icon/tiger-16x16.png'), auto;
+}
+.goods img:hover{
+    cursor: url('img/icon/tiger-16x16.png'), auto;
+}
+.nav img:hover{
+    cursor: url('img/icon/tiger-16x16.png'), auto;
+}
+.swiper-button-next, 
+.swiper-button-prev {
+    color: #ff1212 !important;
+    top: 39% !important;
+    transform: translateY(-50%) !important;
+}
+p{
+    font-size:xx-large;
+}
+nav a{
+    transition: color 0.3s;
+}
+nav a:hover{
+    color: #ff1212;
+
+} 
+.ab{
+    font-size: 4em;
+}  
+.nav div{
+    border: 3px solid #000000 ;
+    padding: 1em;
+    border-radius: 7px;
+}
+.cats-name{
+    padding-left: 3px;
+}
+.cats-price{
+    padding-left: 3px;
+}
+.cats-products-cards{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px,1fr));
+    row-gap: 2em;
+    
+}
+.card{
+    margin-left: 10em;
+    margin-top: 3em;
+}
+.card img{
+    max-width: 100%;
+    height: 400px;
+    background: #ffffff;
+    object-fit: contain;
+}
+.card .add-to-bucket{
+    height: auto;
+    background: none;
+}
+.card .add-to-bucket2{
+    height: auto;
+    background: none;
+}
+.card .add-to-bucket3{
+    height: auto;
+    background: none;
+}
+.card .add-to-bucket4{
+    height: auto;
+    background: none;
+}
+.card div{
+    display: flex;
+    background: none;
+}
+.add-to-bucket{
+    width: 3em;
+}
+.add-to-bucket2{
+    width: 3em;
+}
+.add-to-bucket3{
+    width: 3em;
+}
+.add-to-bucket4{
+    width: 3em;
+}
