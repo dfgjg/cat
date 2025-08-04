@@ -44,23 +44,36 @@ for (let i = 0; i<catsBucket4.length; i+=1){
     })
 }
 
-const st = SplitText.create(".dop", { type: "chars" });
 
-gsap.timeline()
+
+const dopElement = document.querySelector(".dop");
+const text = dopElement.textContent;
+dopElement.textContent = "";
+
+
+text.split("").forEach(char => {
+  const span = document.createElement("span");
+  span.textContent = char;
+  span.style.display = "inline-block";
+  dopElement.appendChild(span);
+});
+
+
+gsap.timeline({ repeat: -1, yoyo: true })
   .set(".dop", { opacity: 1 })
-  .set(st.chars, { yPercent: -60 })
-  .to(st.chars, {
-    duration: 1.4,
-    ease: "power1.inOut",
-    yPercent: 60,
-    rotate: () => "random(-5,5)",
-    stagger: {
-      amount: 1.2,
-      repeat: -1,
-      repeatRefresh: true,
-      yoyo: true
-    },
-    "text-shadow": "2px -6px 0 red, 4px -12px 0 orange, 6px -18px 0 yellow, 8px -24px 0 black"
-  })
-  .seek(99);
-
+  .fromTo(".dop span", 
+    { yPercent: -40, rotation: () => gsap.utils.random(-5, 5) },
+    {
+      yPercent: 40,
+      rotation: () => gsap.utils.random(-5, 5),
+      duration: 1.4,
+      ease: "power1.inOut",
+      stagger: {
+        amount: 1.2,
+        repeat: -1,
+        repeatRefresh: true,
+        yoyo: true
+      },
+      textShadow: "2px -6px 0 red, 4px -12px 0 orange, 6px -18px 0 yellow, 8px -24px 0 rgb(252, 255, 99)"
+    }
+  );
