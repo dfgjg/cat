@@ -11,6 +11,15 @@ body{
     background-color: rgb(253, 246, 187);
     font-family: "Pacifico", cursive;
 }
+.dop {
+    opacity:0;
+    color:#fff;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 6rem;
+    text-shadow: 2px 6px 0 rgb(255, 0, 0), 4px 12px 0 orange, 6px 18px 0 rgb(255, 255, 0), 8px 24px 0 rgb(0, 0, 0);  
+  }
 a:hover{
     cursor: url('img/icon/tiger-16x16.png'), auto;
 }

@@ -44,3 +44,23 @@ for (let i = 0; i<catsBucket4.length; i+=1){
     })
 }
 
+const st = SplitText.create(".dop", { type: "chars" });
+
+gsap.timeline()
+  .set(".dop", { opacity: 1 })
+  .set(st.chars, { yPercent: -60 })
+  .to(st.chars, {
+    duration: 1.4,
+    ease: "power1.inOut",
+    yPercent: 60,
+    rotate: () => "random(-5,5)",
+    stagger: {
+      amount: 1.2,
+      repeat: -1,
+      repeatRefresh: true,
+      yoyo: true
+    },
+    "text-shadow": "2px -6px 0 red, 4px -12px 0 orange, 6px -18px 0 yellow, 8px -24px 0 black"
+  })
+  .seek(99);
+
